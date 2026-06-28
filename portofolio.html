@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aldian</title>
+
+    <link rel="stylesheet" href="portofolio.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="img/download.jpg" class="foto">
+
+        <h1>Aldian</h1>
+
+        <h2 id="typing">Web Developer</h2>
+
+        <button id="btn-info">
+            Tentang Saya
+        </button>
+
+        <p id="info"></p>
+
+    </header>
+
+    <section id="skill">
+
+        <h2>Skill Saya</h2>
+
+        <div class="card">
+
+            <p>HTML</p>
+            <progress value="90" max="100"></progress>
+
+            <p>CSS</p>
+            <progress value="85" max="100"></progress>
+
+            <p>JavaScript</p>
+            <progress value="75" max="100"></progress>
+
+        </div>
+
+    </section>
+
+    <section id="project">
+
+        <h2>Project</h2>
+
+        <div class="project-box">
+
+            <img src="img/project1.jpg" class="project" onclick="showProject(
+            'Website Toko Online',
+            'Website penjualan online menggunakan HTML, CSS, dan JavaScript.'
+            )">
+
+            <img src="img/project2.jpg" class="project" onclick="showProject(
+            'Aplikasi Kasir',
+            'Aplikasi kasir sederhana berbasis web.'
+            )">
+
+            <img src="img/project3.jpg" class="project" onclick="showProject(
+            'Company Profile',
+            'Website company profile yang responsif.'
+            )">
+
+        </div>
+
+        <div id="popup" class="popup">
+
+            <div class="popup-content">
+
+                <h2 id="judul"></h2>
+
+                <p id="deskripsi"></p>
+
+                <button onclick="closePopup()">
+                    Tutup
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Hubungi Saya</h2>
+
+        <div class="card">
+
+            <form id="contactForm">
+
+                <input type="text" id="nama" placeholder="Nama">
+
+                <textarea id="pesan" placeholder="Pesan"></textarea>
+
+                <br>
+
+                <button type="submit">
+
+                    Kirim ke WhatsApp
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <a href="https://wa.me/6285xxxxxxxx" target="_blank">
+                <button>WhatsApp</button>
+            </a>
+
+            <a href="https://instagram.com/username" target="_blank">
+                <button>Instagram</button>
+            </a>
+
+            <a href="pdf/cv.pdf" download>
+                <button>Download CV</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="portofolio.js"></script>
+
+</body>
+
+</html>
